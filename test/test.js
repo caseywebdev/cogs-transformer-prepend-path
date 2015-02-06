@@ -12,7 +12,6 @@ helper.run({
       }],
       links: [],
       globs: []
-    },
-    'test/error.txt': Error
+    }
   }
 });

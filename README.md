@@ -1,8 +1,8 @@
-# cogs-transformer-example
+# cogs-transformer-prepend-path
 
-An example transformer for [Cogs].
+A path prepending transformer for [Cogs].
 
-[![Build Status]](http://travis-ci.org/caseywebdev/cogs-transformer-example)
+[![Build Status]](http://travis-ci.org/caseywebdev/cogs-transformer-prepend-path)
 
 [Cogs]: https://github.com/caseywebdev/cogs
-[Build Status]: https://secure.travis-ci.org/caseywebdev/cogs-transformer-example.png
+[Build Status]: https://secure.travis-ci.org/caseywebdev/cogs-transformer-prepend-path.png

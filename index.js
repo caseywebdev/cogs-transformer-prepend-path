@@ -1,5 +1,13 @@
+var _ = require('underscore');
+
+var DEFAULTS = {
+  before: '',
+  after: ''
+};
+
 module.exports = function (file, options, cb) {
-  var source = file.buffer.toString();
-  if (source.indexOf(options.errorText) > -1) return cb(new Error('No good!'));
-  cb(null, {buffer: new Buffer('bar\n')});
+  options = _.extend({}, DEFAULTS, options);
+  var source =  options.before + file.path + options.after + '\n' +
+    file.buffer.toString();
+  cb(null, {buffer: new Buffer(source)});
 };

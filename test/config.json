@@ -4,7 +4,8 @@
       "transformers": {
         "name": ".",
         "options": {
-          "errorText": "error"
+          "before": "/* ",
+          "after": " */"
         }
       }
     }
