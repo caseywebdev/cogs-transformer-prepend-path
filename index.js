@@ -1,13 +1,11 @@
-var _ = require('underscore');
+const _ = require('underscore');
 
-var DEFAULTS = {
+const DEFAULTS = {
   before: '',
   after: ''
 };
 
-module.exports = function (file, options, cb) {
-  options = _.extend({}, DEFAULTS, options);
-  var source =  options.before + file.path + options.after + '\n' +
-    file.buffer.toString();
-  cb(null, {buffer: new Buffer(source)});
+module.exports = ({file: {buffer, path}, options}) => {
+  const {before, after} = _.extend({}, DEFAULTS, options);
+  return {buffer: new Buffer(`${before}${path}${after}\n${buffer}`)};
 };

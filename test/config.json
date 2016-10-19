@@ -1,13 +1,9 @@
 {
-  "in": {
-    "txt": {
-      "transformers": {
-        "name": ".",
-        "options": {
-          "before": "/* ",
-          "after": " */"
-        }
-      }
+  "transformers": {
+    "name": ".",
+    "options": {
+      "before": "/* ",
+      "after": " */"
     }
   }
 }
